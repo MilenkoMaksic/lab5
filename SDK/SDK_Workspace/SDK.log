@@ -162,3 +162,45 @@
 11:52:32.939 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
 11:57:45.661 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
 12:00:53.593 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:47:57.087 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+10:56:11.379 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:57:31.048 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:06:59.765 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:10:52.114 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:11:56.473 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:13:17.042 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:13:39.326 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:14:19.390 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:16:27.092 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+11:16:32.640 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

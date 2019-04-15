@@ -55,7 +55,23 @@ void draw_square(Xuint32 BaseAddress){
 			}
 		}
 }
+void moving_square(Xuint32 BaseAddress, Xuint32 x, Xuint32 y){
+	int i,j,k;
 
+
+
+	for (j = 0; j < 480; j++){
+				for (k = 0; k<(640/32); k++){
+					i = j*(640/32) + k;
+					if ((j > x) && (j < x+80) && (k > (y/32)-2) && (k < (y/32)+2)) {
+						VGA_PERIPH_MEM_mWriteMemory(BaseAddress + GRAPHICS_MEM_OFF + i*4, 0xFFFFFFFF);
+					}
+					else{
+						VGA_PERIPH_MEM_mWriteMemory(BaseAddress + GRAPHICS_MEM_OFF + i*4, 0x0);
+					}
+				}
+	}
+}
 void clear_screan(Xuint32 BaseAddress){
 	int i;
 	for (i = 0; i < 4800; i++){
@@ -90,11 +106,13 @@ void draw_rectangle(Xuint32 BaseAddress){
 	}
 }
 
-struct resolution get_resolution(Xuint32 BaseAddres){
-	struct resolution res;
-	res.height = 0;
-	res.width = 0;
-	return res;
+int get_resolution(Xuint32 BaseAddres){
+	int i;
+	int end = 0;
+	while(i != end){
+		i++;
+	}
+	return i;
 }
 
 

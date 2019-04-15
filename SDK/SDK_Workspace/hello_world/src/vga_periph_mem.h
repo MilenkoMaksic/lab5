@@ -65,10 +65,7 @@
  * @note    Self test may fail if data memory and device are not on the same bus.
  *
  */
-struct resolution{
-	Xuint32 width;
-	Xuint32 height;
-};
+
 XStatus VGA_PERIPH_MEM_SelfTest(void * baseaddr_p);
 
 void set_cursor(Xuint32 new_value);
@@ -83,6 +80,7 @@ void clear_screan(Xuint32 BaseAddress);
 void set_foreground_color(Xuint32 BaseAddress, int color);
 void set_background(Xuint32 BaseAddress, int color);
 void draw_rectangle(Xuint32 BaseAddress);
-struct resolution get_resolution(Xuint32 BaseAddres);
+void moving_square(Xuint32 BaseAddress, Xuint32 x, Xuint32 y);
+int get_resolution(Xuint32 BaseAddres);
 
 #endif /** VGA_PERIPH_MEM_H */

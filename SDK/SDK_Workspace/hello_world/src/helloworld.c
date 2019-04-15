@@ -48,7 +48,7 @@ int main()
 {
     init_platform();
     unsigned char string_s[] = "LPRS 2\n";
-
+    int i;
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x00, 0x0);// direct mode   0
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x04, 0x3);// display_mode  1
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x08, 0x1);// show frame      2
@@ -63,12 +63,34 @@ int main()
     clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     set_cursor(350);
-   // print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, 6);
+    print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, 6);
     print_char(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, 'D');
-    draw_rectangle(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
-    set_background_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x14, 0x000000);
-    set_foreground_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x10, 0xFF0000);
+    //draw_rectangle(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+    while(1){
+    	int x = 200;
+    	int y = 512;
+    	int p = 0;
+    	for (i = 0; i<4800; i++){
+    		set_cursor(i);
+    		moving_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,x,y);
+    		if(p == 0){
+    			if(y == 64){
+    				p = 1;
+    			}else{
+    				y--;
+    			}
+    		}else if(p == 1){
+    			if(y == 600){
+    				p = 0;
+    			}else{
+    				y++;
+    			}
+    		}
 
+    	}
+    }
+    set_foreground_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x10, 0xFF0000);
+    set_background_color(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x14, 0x000000);
 
 
     return 0;

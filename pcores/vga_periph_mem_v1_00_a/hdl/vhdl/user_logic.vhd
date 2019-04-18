@@ -128,6 +128,7 @@ entity user_logic is
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
     blue_o         : out std_logic_vector(7 downto 0);
+    irq_o_       : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -321,6 +322,9 @@ architecture IMP of user_logic is
   signal unit_sel            : std_logic_vector(1 downto 0);
   signal unit_addr           : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);--15+6+1
   signal reg_we              : std_logic;
+  signal v_sync_cnt_tc       : std_logic_vector(31 downto 0);
+  signal en                  : std_logic_vector(31 downto 0);
+  signal tc                  : std_logic;
 
 begin
   --USER logic implementation added here
@@ -359,11 +363,24 @@ begin
             when REG_ADDR_04 => foreground_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_05 => background_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_06 => frame_color      <= Bus2IP_Data(23 downto 0);
+			when REG_ADDR_07 => v_sync_cnt_tc    <= Bus2IP_Data(31 downto 0);
+			when REG_ADDR_08 => en               <= Bus2IP_Data(31 downto 0);
+
             when others => null;
           end case;
         end if;
     end if;
   end process;
+  process(v_sync_cnt_tc, dir_pixel_row) begin
+	if(v_sync_cnt_tc = dir_pixel_row) then
+		tc <= '1';
+	else
+		tc <= '0';
+	end if;
+  end process;	
+  
+  irq <= tc and en;
+  
     
 --  direct_mode      <= '0';
 --  display_mode     <= "01";

@@ -67,14 +67,13 @@ int main()
     print_char(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, 'D');
     //draw_rectangle(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     while(1){
-    	int x = 200;
-    	int y = 512;
+
+    	int y = 576;
     	int p = 0;
     	for (i = 0; i<4800; i++){
-    		set_cursor(i);
-    		moving_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,x,y);
+    		moving_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR,y);
     		if(p == 0){
-    			if(y == 64){
+    			if(y == 60){
     				p = 1;
     			}else{
     				y--;

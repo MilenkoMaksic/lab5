@@ -204,3 +204,74 @@
     hw_server is running and correct TCP port is used.
  
 11:16:32.640 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:17:07.360 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:18:14.492 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:18:40.163 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:20:25.453 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:25:14.129 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:25:56.952 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:36:54.879 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:37:24.129 WARN  - Terminating existing sessions on processor microblaze_0 
+11:37:28.241 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:39:21.339 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:39:52.467 WARN  - Terminating existing sessions on processor microblaze_0 
+11:39:56.572 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:40:36.728 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:41:16.453 WARN  - Terminating existing sessions on processor microblaze_0 
+11:41:20.544 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:41:57.446 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:42:18.734 WARN  - Terminating existing sessions on processor microblaze_0 
+11:42:22.878 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:43:13.098 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:43:48.231 WARN  - Terminating existing sessions on processor microblaze_0 
+11:43:52.347 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:47:06.658 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:52:05.840 WARN  - Terminating existing sessions on processor microblaze_0 
+11:52:09.913 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:52:46.247 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:53:46.324 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:58:46.062 WARN  - Terminating existing sessions on processor microblaze_0 
+11:58:50.184 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:59:30.180 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:59:37.486 WARN  - Terminating existing sessions on processor microblaze_0 
+11:59:41.639 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:00:13.112 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:00:49.573 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:01:16.345 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:01:34.841 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:02:34.717 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:03:00.012 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:03:20.799 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:09:45.786 WARN  - Terminating existing sessions on processor microblaze_0 
+12:09:49.856 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:10:16.401 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:11:33.281 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:11:45.704 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:07.478 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:40.507 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:14:15.968 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:16:51.560 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:17:19.336 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:17:35.439 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:17:44.346 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:24:50.686 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:24:50.716 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+12:24:50.717 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:17:56.511 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+11:33:37.542 INFO  - FPGA configured successfully with bitstream "D:/ra11-2016/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:35:09.087 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:35:09.108 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:35:09.111 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

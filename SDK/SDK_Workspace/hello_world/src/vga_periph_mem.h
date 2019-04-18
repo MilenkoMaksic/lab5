@@ -80,7 +80,7 @@ void clear_screan(Xuint32 BaseAddress);
 void set_foreground_color(Xuint32 BaseAddress, int color);
 void set_background(Xuint32 BaseAddress, int color);
 void draw_rectangle(Xuint32 BaseAddress);
-void moving_square(Xuint32 BaseAddress, Xuint32 x, Xuint32 y);
+void moving_square(Xuint32 BaseAddress, Xuint32 y);
 int get_resolution(Xuint32 BaseAddres);
 
 #endif /** VGA_PERIPH_MEM_H */

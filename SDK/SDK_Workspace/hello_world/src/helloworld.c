@@ -41,7 +41,6 @@
 #include "xio.h"
 #include "vga_periph_mem.h"
 
-
 void print(char *str);
 
 int main()

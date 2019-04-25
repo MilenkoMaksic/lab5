@@ -128,7 +128,7 @@ entity user_logic is
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
     blue_o         : out std_logic_vector(7 downto 0);
-    irq_o_       : out std_logic;
+    irq_o      : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -192,7 +192,8 @@ architecture IMP of user_logic is
   constant REG_ADDR_04       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 4, GRAPH_MEM_ADDR_WIDTH);
   constant REG_ADDR_05       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 5, GRAPH_MEM_ADDR_WIDTH);
   constant REG_ADDR_06       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 6, GRAPH_MEM_ADDR_WIDTH);
-  
+  constant REG_ADDR_07       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 7, GRAPH_MEM_ADDR_WIDTH);
+  constant REG_ADDR_08       : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0) := conv_std_logic_vector( 8, GRAPH_MEM_ADDR_WIDTH);
   constant update_period     : std_logic_vector(31 downto 0) := conv_std_logic_vector(1, 32);
   
   --addr_size = 15+6 = 21;+2 = 23
@@ -323,7 +324,7 @@ architecture IMP of user_logic is
   signal unit_addr           : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);--15+6+1
   signal reg_we              : std_logic;
   signal v_sync_cnt_tc       : std_logic_vector(31 downto 0);
-  signal en                  : std_logic_vector(31 downto 0);
+  signal en                  : std_logic;
   signal tc                  : std_logic;
 
 begin
@@ -364,7 +365,7 @@ begin
             when REG_ADDR_05 => background_color <= Bus2IP_Data(23 downto 0);
             when REG_ADDR_06 => frame_color      <= Bus2IP_Data(23 downto 0);
 			when REG_ADDR_07 => v_sync_cnt_tc    <= Bus2IP_Data(31 downto 0);
-			when REG_ADDR_08 => en               <= Bus2IP_Data(31 downto 0);
+			when REG_ADDR_08 => en               <= Bus2IP_Data(0);
 
             when others => null;
           end case;
@@ -379,7 +380,7 @@ begin
 	end if;
   end process;	
   
-  irq <= tc and en;
+  irq_o <= tc and en;
   
     
 --  direct_mode      <= '0';

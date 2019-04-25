@@ -40,17 +40,17 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world/src/helloworld.c" title="helloworld.c" tooltip="hello_world/src/helloworld.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world/src/helloworld.c" title="helloworld.c" tooltip="hello_world/src/helloworld.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/helloworld.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2887" selectionTopPixel="516"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1522" selectionTopPixel="360"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="hello_world_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world_bsp/microblaze_0/include/xparameters.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="41" selectionOffset="5722" selectionTopPixel="1530"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" partName="vga_periph_mem.c" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world/src/vga_periph_mem.c" title="vga_periph_mem.c" tooltip="hello_world/src/vga_periph_mem.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.c" partName="vga_periph_mem.c" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world/src/vga_periph_mem.c" title="vga_periph_mem.c" tooltip="hello_world/src/vga_periph_mem.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/vga_periph_mem.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1776" selectionTopPixel="375"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1776" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="vga_periph_mem.h" partName="vga_periph_mem.h" path="D:/ra11-2016/lab5/SDK/SDK_Workspace/hello_world/src/vga_periph_mem.h" title="vga_periph_mem.h" tooltip="hello_world/src/vga_periph_mem.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hello_world/src/vga_periph_mem.h"/>
@@ -216,13 +216,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world_bsp/microblaze_0/include/xparameters.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/vga_periph_mem.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/vga_periph_mem.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hello_world/src/helloworld.c"/>
 </editors>
-<item historyLabel="vga_periph_mem.c" index="1">
-<position info="not_deleted" x="1909" y="0"/>
-</item>
-<item historyLabel="vga_periph_mem.h" index="2">
-<position info="not_deleted" x="2821" y="0"/>
-</item>
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="2711" y="0"/>
 </item>
@@ -364,8 +359,14 @@
 <item historyLabel="helloworld.c" index="0">
 <position info="not_deleted" x="2887" y="0"/>
 </item>
-<item active="true" historyLabel="vga_periph_mem.c" index="5">
+<item historyLabel="vga_periph_mem.c" index="5">
 <position info="not_deleted" x="2069" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="7">
+<position info="not_deleted" x="2885" y="0"/>
+</item>
+<item active="true" historyLabel="helloworld.c" index="7">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
